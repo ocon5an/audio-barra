@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Audio & Barra</title>
+</head>
+
+<body>
+    <h1>Reproduccion de Audio</h1>
+    <script>
+        var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiempre", "Octubre", "Noviembre", "Diciembre");
+        var f = new Date();
+        document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+
+    </script>
+    <br>
+    <audio src="assets/lost-woods.mp3" preload="auto" controls></audio><br>
+    <audio src="assets/mario-world.mp3" preload="auto" controls></audio><br>
+    <audio src="assets/wonder.mp3" preload="auto" controls></audio><br>
+    <audio id="player" src="assets/mp3.mp3" autoplay loop></audio><br>
+    <button onclick="document.getElementById('player')">stop</button>
+<br>
+    <nav>Barra de navegacion</nav>
+    <div class="container">
+        <section class="columna1">Seccion 1</section>
+        <section class="columna2">Seccion 2</section>
+        <section class="columna3">Seccion 3</section>
+        <section class="columna4">Seccion 4</section>
+        <section class="columna5">Seccion 5</section>
+    </div>
+
+</body>
+
+</html>
